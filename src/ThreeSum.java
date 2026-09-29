@@ -10,6 +10,20 @@ public class ThreeSum {
     public static int count(int[] a) {
 
         int count = 0;
+        int n= a.length;
+        for(int i=0; i<n; i++)
+        {
+            for(int j=0; i<j; j++)
+            {
+                for(int k=0; i<k; k++)
+                {
+                    if( a[i]+a[j]+a[k] ==0)
+                    {
+                        count++;
+                    }
+                }
+            }
+        }
         //TODO: Finish THreeSum
 
         return count;
